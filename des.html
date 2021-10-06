@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado DES</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<p>Veites Uruchurtu Diego</p>
+<body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/tripledes.js"></script>
+
+    <div class="container">
+        <div class="row">
+          <div class="inputs" style="margin-top: 15%">
+            <center><h1>Cifrado DES</h1></center>
+                <input class="form-control" type="file" id="archivodes" >
+                <br>
+                <input class="form-control" type="button" value="Leer Archivo" onclick="leerdes()">
+                <br>
+                <input class="form-control" type="password" placeholder="Clave" id="clavedes" onkeypress="return letras(event)" maxlength="8" minlength="8">
+                <br>
+                <input class="form-control" type="button" value="Cifrar" onclick="cifraDes()">
+                <br>
+                <input class="form-control" type="button" value="Descifrar" onclick="descifraDes()">
+                <p id="txtDes"></p>
+                
+                <div id="resultado"></div>
+          </div>
+    <script src="lo.js"></script>
+    <script src="vo.js"></script>
+
+</body>
+</html>
